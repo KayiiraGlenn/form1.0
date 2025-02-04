@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="autralia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea name="subject" id="subject" placeholder="Write something.." style="height: 200px;"></textarea>
+            <input type="submit" onclick="contact()" value="Submit">
+
+        </form>
+    </div>
+
+
+</body>
+<script>
+    function contact() {
+       let feild1 = document.getElementById("fname").value;
+       console.log(feild1) 
+       let feild2 = document.getElementById("lname").value;
+       console.log(feild2) 
+       let feild3 = document.getElementById("country").value;
+       console.log(feild3) 
+       let feild4 = document.getElementById("subject").value;
+       console.log(feild4) 
+
+        // let contactMessage = {
+        //     First:feild1,
+        //     Last:feild2,
+        //     Country:feild3,
+        //     message:feild4
+        // }
+        // console.log(contactMessage)
+    }
+    
+
+</script>
+</html>
